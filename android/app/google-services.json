@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "618639647473",
+    "project_id": "aigle-1a670",
+    "storage_bucket": "aigle-1a670.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618639647473:android:fdbf9868723d035e4b7f50",
+        "android_client_info": {
+          "package_name": "com.example.aigle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618639647473-2dlcv1gd7nej6r0u4lr9fqbdf3i6cnfa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aigle",
+            "certificate_hash": "513c930bf9c3af1702f66f331e5792b9003e44ab"
+          }
+        },
+        {
+          "client_id": "618639647473-sk9dub469vrcn426fj4rhr8ljndv4uip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB9tIEpRGlavwiZ_KIzf7RvS2x8igAarA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618639647473-sk9dub469vrcn426fj4rhr8ljndv4uip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
