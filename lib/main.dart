@@ -1,3 +1,16 @@
+import 'package:aigle/components/dashboard/address.dart';
+import 'package:aigle/components/dashboard/cart.dart';
+import 'package:aigle/components/dashboard/checkout.dart';
+import 'package:aigle/components/dashboard/faq.dart';
+import 'package:aigle/providers/cart_provider.dart';
+import 'package:aigle/screens/authentication/forget_password.dart';
+import 'package:aigle/screens/authentication/login.dart';
+import 'package:aigle/screens/authentication/register.dart';
+import 'package:aigle/screens/dashboard/dashboard.dart';
+import 'package:aigle/screens/onboarding/onboarding.dart';
+import 'package:aigle/screens/products/payment_detail.dart';
+import 'package:aigle/screens/products/payment_success.dart';
+import 'package:aigle/screens/products/products.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -16,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        
+        ChangeNotifierProvider(create: (context) => CartProvider()),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
@@ -41,7 +54,18 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: "/dashboard",
         routes: {
-          
+          "/onboarding": (context) => const Onboarding(),
+          "/products": (context) => const Products(),
+          "/login": (context) => const Login(),
+          "/register": (context) => const Register(),
+          "/forget_password": (context) => const ForgetPassword(),
+          "/dashboard": (context) => const Dashboard(),
+          "/cart": (context) => const Cart(),
+          "/profile_data": (context) => const Address(),
+          "/checkout": (context) => const Checkout(),
+          "/payment_detail": (context) => const PaymentDetail(),
+          "/payment_success": (context) => const PaymentSuccess(),
+          "/faq": (context) => const Faq()
         },
       ),
     );

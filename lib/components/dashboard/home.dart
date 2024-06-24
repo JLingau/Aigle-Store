@@ -91,23 +91,6 @@ class _HomeState extends State<Home> {
                 )
               : Row(
                   children: [
-                    InkWell(
-                      onTap: () {},
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 5, vertical: 4),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.circular(7.5),
-                          color: const Color.fromRGBO(74, 76, 92, 1),
-                        ),
-                        child: const Icon(
-                          Icons.notifications,
-                          color: Colors.amber,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10),
                     badges.Badge(
                       badgeContent: Consumer<CartProvider>(
                         builder: (context, value, child) {
