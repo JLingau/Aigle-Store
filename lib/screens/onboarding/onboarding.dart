@@ -59,16 +59,16 @@ List<Map> pages = [
   {
   "image" : "assets/images/onboarding1.png",
   "title" : "Aigle",
-  "description" : "Testing Out"
+  "description" : "AIGLE is eyewear store application that give an amazing experience purchasing your own style of your eyewear. AIGLE will give guarantee for who don’t satisfy after using our products."
   },
   {
   "image" : "assets/images/onboarding2.png",
   "title" : "Virtual Try-On",
-  "description" : "Testing Out"
+  "description" : "Experience the future of eyewear shopping with our virtual try-on feature! Try on hundreds of stylish frames from the comfort of your own home."
   },
   {
   "image" : "assets/images/onboarding3.png",
   "title" : "Choose Yours",
-  "description" : "Testing Out"
+  "description" : "You can customize the color and style of their glasses, creating a unique and personalized look. Choose and create the new style that suitable for you."
   },
 ];

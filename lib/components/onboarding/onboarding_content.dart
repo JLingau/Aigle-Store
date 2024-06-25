@@ -47,7 +47,7 @@ class OnboardingContent extends StatelessWidget {
                       style: const TextStyle(
                           color: Colors.white,
                           fontSize: 28,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w900,
                           fontStyle: FontStyle.italic),
                     ),
                     Text(
@@ -76,7 +76,7 @@ class OnboardingContent extends StatelessWidget {
                                             Color.fromRGBO(212, 160, 86, 1)),
                                   ),
                                   onPressed: () {
-                                    Navigator.of(context).pushNamed("/login");
+                                    Navigator.of(context).pushReplacementNamed("/dashboard");
                                   },
                                 ),
                               ),
@@ -106,7 +106,7 @@ class OnboardingContent extends StatelessWidget {
                                 child: ElevatedButton(
                                   onPressed: () {
                                     Navigator.of(context)
-                                        .pushReplacementNamed("/login");
+                                        .pushReplacementNamed("/dashboard");
                                   },
                                   style: ElevatedButton.styleFrom(
                                       backgroundColor:
