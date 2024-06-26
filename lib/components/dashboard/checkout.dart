@@ -20,7 +20,7 @@ class _CheckoutState extends State<Checkout> {
   String address = '';
   int number = 0;
 
-  ProfileDetail _profileDetail = ProfileDetail();
+  final ProfileDetail _profileDetail = ProfileDetail();
   final OrderHistory _orderHistory = OrderHistory();
 
   @override
@@ -29,8 +29,8 @@ class _CheckoutState extends State<Checkout> {
     _profileDetail.getProfileData().then((value) {
       setState(() {
         name = value['name'];
-        address = value['address'];
-        number = value['phoneNumber'];
+        value['address'] != null ? address = value['address'] : address = '';
+        value['phoneNumber'] != null ? number = value['phoneNumber'] : number = 0;
       });
     });
   }
@@ -55,7 +55,7 @@ class _CheckoutState extends State<Checkout> {
                 children: [
                   Expanded(
                       child: SingleChildScrollView(
-                    physics: ScrollPhysics(),
+                    physics: const ScrollPhysics(),
                     child: Column(
                       children: [
                         const SizedBox(height: 10),
